@@ -70,11 +70,11 @@ public class PlayerScript : MonoBehaviour
 			{
 				if (grounded)
 				{
-					forceX = - moveForce;
+					forceX = -moveForce;
 				}
 				else
 				{
-					forceY = moveForce * 1.1f;
+					forceY = -moveForce * 1.1f;
 				}
 			}
 
