@@ -37,8 +37,18 @@ public class PlayerScript : MonoBehaviour {
 	void PlayerWalkKeyboard()
 	{
 		float forceX = 0f;
-		float forceY = 1f;
+		float forceY = 0f;
 
 		float velocity = Mathf.Abs(myBody.velocity.x);
+
+		float h = Input.GetAxisRaw("Horizontal");
+
+		if (h > 0)
+		{
+			if (velocity )
+			{
+				
+			}
+		}
 	}
 }
