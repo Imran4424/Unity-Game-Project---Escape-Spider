@@ -72,7 +72,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1672518242816538}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: ec5cff020854721469121f01d2eef268, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -118,7 +118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveForce: 20
-  jumpForce: 700
+  jumpForce: 500
   maxVelocity: 4
 --- !u!212 &212667520469657968
 SpriteRenderer:
