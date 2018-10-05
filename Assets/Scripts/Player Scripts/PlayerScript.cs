@@ -45,10 +45,16 @@ public class PlayerScript : MonoBehaviour {
 
 		if (h > 0)
 		{
-			if (velocity )
+			if (velocity < maxVelocity)
 			{
-				
+				forceX = moveForce;
 			}
+
+			Vector3 scale = transform.localScale;
+			scale.x = 1f;
+			transform.localScale = scale;
+
+			anim.SetBool("Walk", true);
 		}
 	}
 }
