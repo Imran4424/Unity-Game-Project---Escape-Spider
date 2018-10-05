@@ -2,8 +2,8 @@ fileFormatVersion: 2
 guid: 36edef39db4d02243ba89901e15b0cf7
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Grounds_0
-    21300002: Grounds_1
+    21300000: Grounds_1
+    21300002: Grounds_2
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -111,7 +111,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Grounds_0
+      name: Grounds_1
       rect:
         serializedVersion: 2
         x: 3
@@ -119,13 +119,13 @@ TextureImporter:
         width: 1024
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Grounds_1
+      name: Grounds_2
       rect:
         serializedVersion: 2
         x: 1
@@ -133,7 +133,7 @@ TextureImporter:
         width: 1024
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
