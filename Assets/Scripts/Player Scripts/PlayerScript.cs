@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerScript : MonoBehaviour
 {
 
-	public float moveForce = 20f, jumpForce = 500f, maxVelocity = 4f;
+	public float moveForce = 20f, jumpForce = 700f, maxVelocity = 4f;
 
 	private bool grounded;
 
