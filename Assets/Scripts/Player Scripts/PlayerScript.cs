@@ -79,7 +79,9 @@ public class PlayerScript : MonoBehaviour
 		{
 			if (grounded)
 			{
-				
+				grounded = false;
+
+				forceY = jumpForce;
 			}
 		}
 
