@@ -25,4 +25,9 @@ public class PlayerScript : MonoBehaviour {
 	{
 		
 	}
+
+	void InitializeVariables()
+	{
+		
+	}
 }
