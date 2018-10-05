@@ -75,6 +75,14 @@ public class PlayerScript : MonoBehaviour
 			anim.SetBool ("Walk", false);
 		}
 
+		if (Input.GetKey(KeyCode.Space))
+		{
+			if (grounded)
+			{
+				
+			}
+		}
+
 		myBody.AddForce(new Vector2(forceX, forceY));
 	}
 }
