@@ -33,4 +33,12 @@ public class PlayerScript : MonoBehaviour {
 		myBody = GetComponent <Rigidbody2D> ();
 		anim = GetComponent <Animator> ();
 	}
+
+	void PlayerWalkKeyboard()
+	{
+		float forceX = 0f;
+		float forceY = 1f;
+
+		float velocity = Mathf.Abs(myBody.velocity.x);
+	}
 }
