@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerScript : MonoBehaviour
 {
 
-	public float moveForce = 20f, jumpForce = 700f, maxVelocity = 4f;
+	public float moveForce = 20f, jumpForce = 500f, maxVelocity = 4f;
 
 	private bool grounded;
 
@@ -26,7 +26,7 @@ public class PlayerScript : MonoBehaviour
 	// Update is called once per frame
 	void FixedUpdate ()
 	{
-		PlayerWalkKeyboard();
+		PlayerWalkKeyboard ();
 	}
 
 	void InitializeVariables ()
@@ -48,7 +48,14 @@ public class PlayerScript : MonoBehaviour
 		{
 			if (velocity < maxVelocity)
 			{
-				forceX = moveForce;
+				if (grounded)
+				{
+					forceX = moveForce;
+				}
+				else
+				{
+					forceY = moveForce * 1.1f;
+				}
 			}
 
 			Vector3 scale = transform.localScale;
@@ -61,11 +68,18 @@ public class PlayerScript : MonoBehaviour
 		{
 			if (velocity < maxVelocity)
 			{
-				forceX = -moveForce;
+				if (grounded)
+				{
+					forceX = - moveForce;
+				}
+				else
+				{
+					forceY = moveForce * 1.1f;
+				}
 			}
 
 			Vector3 scale = transform.localScale;
-			scale.x = -1f;
+			scale.x = - 1f;
 			transform.localScale = scale;
 
 			anim.SetBool ("Walk", true);
@@ -75,7 +89,7 @@ public class PlayerScript : MonoBehaviour
 			anim.SetBool ("Walk", false);
 		}
 
-		if (Input.GetKey(KeyCode.Space))
+		if (Input.GetKey (KeyCode.Space))
 		{
 			if (grounded)
 			{
@@ -85,12 +99,12 @@ public class PlayerScript : MonoBehaviour
 			}
 		}
 
-		myBody.AddForce(new Vector2(forceX, forceY));
+		myBody.AddForce (new Vector2 (forceX, forceY));
 	}
 
-	void OnCollisionEnter2D(Collision2D target)
+	void OnCollisionEnter2D (Collision2D target)
 	{
-		if(target.gameObject.tag == "Ground")
+		if (target.gameObject.tag == "Ground")
 		{
 			grounded = true;
 		}
