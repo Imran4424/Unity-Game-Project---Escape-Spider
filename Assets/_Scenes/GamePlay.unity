@@ -285,6 +285,12 @@ Prefab:
       propertyPath: m_Size.y
       value: 1.087836
       objectReference: {fileID: 0}
+    - target: {fileID: 114097485449578106, guid: eb734f574373e6947a2a973989d29484,
+        type: 2}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 1405441390621128, guid: c07a2c2c71e5e1845a48d77fae64d4fe,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eb734f574373e6947a2a973989d29484, type: 2}
   m_IsPrefabParent: 0
