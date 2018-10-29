@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class SpiderShooter : MonoBehaviour {
 
+	[SerializeField]
+	private GameObject bullet;
+	
 	// Use this for initialization
 	void Start () {
 		
