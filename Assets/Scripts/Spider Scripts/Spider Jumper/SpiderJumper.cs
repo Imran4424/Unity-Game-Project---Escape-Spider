@@ -34,4 +34,12 @@ public class SpiderJumper : MonoBehaviour
 
 		StartCoroutine(Attack());
 	}
+
+	void OnTriggerEnter2D(Collider2D target)
+	{
+		if (target.tag == "Ground")
+		{
+			anim.SetBool("Attack", false);
+		}		
+	}
 }
