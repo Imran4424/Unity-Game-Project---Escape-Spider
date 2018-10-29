@@ -21,5 +21,9 @@ public class SpiderJumper : MonoBehaviour
 		
 	}
 	
-	
+	IEnumerator Attack()
+	{
+		yield return new WaitForSeconds(Random.Range(0,7));
+		yield return null;
+	}
 }
