@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212295602232677578}
   - component: {fileID: 61703843876667556}
   - component: {fileID: 50137291637622766}
+  - component: {fileID: 114277200398503446}
   m_Layer: 0
   m_Name: Spider Bullet
   m_TagString: Untagged
@@ -87,6 +88,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.41, y: 0.77}
   m_EdgeRadius: 0
+--- !u!114 &114277200398503446
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1405441390621128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc87356384fb7c444acd84fcf0724b6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212295602232677578
 SpriteRenderer:
   m_ObjectHideFlags: 1
