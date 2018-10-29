@@ -12,6 +12,10 @@ public class SpiderBullet : MonoBehaviour
 			Destroy(target.gameObject);			
 			Destroy(gameObject);			
 		}
+		else if (target.tag == "Ground")
+		{
+			Destroy(gameObject);
+		}
 	}
 	
 }
