@@ -18,7 +18,7 @@ public class SpiderJumper : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
-		Star
+		StartCoroutine(Attack());
 	}
 	
 	IEnumerator Attack()
