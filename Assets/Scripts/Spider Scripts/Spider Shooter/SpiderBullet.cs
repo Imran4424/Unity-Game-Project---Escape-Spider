@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class SpiderBullet : MonoBehaviour 
 {
-
+	
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		
+	}
 	
 }
