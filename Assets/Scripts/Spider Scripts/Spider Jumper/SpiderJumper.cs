@@ -18,12 +18,20 @@ public class SpiderJumper : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
-		
+		Star
 	}
 	
 	IEnumerator Attack()
 	{
 		yield return new WaitForSeconds(Random.Range(0,7));
-		yield return null;
+
+		forceY = Random.Range(250, 550);
+
+		myBody.AddForce(new Vector2(0, forceY));
+		anim.SetBool("Attack",true);
+
+		yield return new WaitForSeconds(.7f);
+
+		StartCoroutine(Attack());
 	}
 }
