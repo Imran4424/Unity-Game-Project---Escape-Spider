@@ -8,7 +8,15 @@ public class SpiderShooter : MonoBehaviour {
 	private GameObject bullet;
 	
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
+		
+	}
+
+	IEnumerator Attack()
+	{
+		yield return new WaitForSeconds(Random.Range(2,7));
+
 		
 	}
 	
