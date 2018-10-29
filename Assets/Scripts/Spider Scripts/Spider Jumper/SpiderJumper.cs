@@ -11,7 +11,8 @@ public class SpiderJumper : MonoBehaviour
 
 	void Awake()
 	{
-		
+		myBody = GetComponent <Rigidbody2D> ();
+		anim = GetComponent <Animator> ();
 	}
 
 	// Use this for initialization
