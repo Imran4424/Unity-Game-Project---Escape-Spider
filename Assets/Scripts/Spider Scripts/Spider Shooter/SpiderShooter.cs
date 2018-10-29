@@ -22,6 +22,12 @@ public class SpiderShooter : MonoBehaviour {
 		StartCoroutine(Attack());
 	}
 	
-	
+	void OnTriggerEnter2D(Collider2D target)
+	{
+		if (target.tag == "Player")
+		{
+			Destroy(target.gameObject);
+		}
+	}
 	
 }
