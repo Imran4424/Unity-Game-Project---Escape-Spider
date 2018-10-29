@@ -10,18 +10,18 @@ public class SpiderShooter : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-		
+		StartCoroutine(Attack());
 	}
 
 	IEnumerator Attack()
 	{
 		yield return new WaitForSeconds(Random.Range(2,7));
 
-		
+		Instantiate(bullet,transform.position,Quaternion.identity);
+
+		StartCoroutine(Attack());
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+	
+	
 }
