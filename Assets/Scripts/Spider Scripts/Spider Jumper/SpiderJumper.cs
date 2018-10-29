@@ -40,6 +40,11 @@ public class SpiderJumper : MonoBehaviour
 		if (target.tag == "Ground")
 		{
 			anim.SetBool("Attack", false);
-		}		
+		}
+
+		if (target.tag == "Player")
+		{
+			Destroy(target.gameObject);
+		}
 	}
 }
