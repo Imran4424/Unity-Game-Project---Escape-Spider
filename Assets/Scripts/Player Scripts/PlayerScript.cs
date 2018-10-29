@@ -75,6 +75,7 @@ public class PlayerScript : MonoBehaviour
 				}
 				else
 				{
+					forceX = -moveForce;
 					forceY = -moveForce * 1.1f;
 				}
 			}
