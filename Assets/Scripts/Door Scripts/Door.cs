@@ -12,10 +12,17 @@ public class Door : MonoBehaviour
 	[HideInInspector]
 	public int countCollectables; 
 
-	// Use this for initialization
-	void Start () 
+	void Awake()
 	{
 		
+	}
+
+	void MakeInstance()
+	{
+		if (instance == null)
+		{
+			instance = this;
+		}
 	}
 	
 	// Update is called once per frame
