@@ -44,5 +44,11 @@ public class Door : MonoBehaviour
 		box.isTrigger = true;
 	}
 	
-	
+	void OnTriggerEnter2D(Collider2D target)
+	{
+		if (target.gameObject.tag == "Player")
+		{
+			Debug.Log("Level Finished");
+		}
+	}
 }
