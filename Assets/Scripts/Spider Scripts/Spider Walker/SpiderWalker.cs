@@ -51,6 +51,8 @@ public class SpiderWalker : MonoBehaviour
 			{
 				temp.x = 1f;
 			}
+
+			transform.localScale = temp;
 		}
 	}
 }
