@@ -6,6 +6,8 @@ public class SpiderWalker : MonoBehaviour
 {
 	[SerializeField]
 	private Transform startPos, endPos;
+
+	private bool collision_check;
 	private float speed = 1f;
 	private Rigidbody2D myBody;
 
@@ -28,5 +30,13 @@ public class SpiderWalker : MonoBehaviour
 	void Move()
 	{
 		myBody.velocity = new Vector2(transform.localScale.x, 0) * speed;
+	}
+
+	/*
+		using line cast for detect the whole line collision
+	*/
+	void ChangeDirection()
+	{
+		collision_check = Physics2D.Linecast(startPos.position, endPos.position, 1 << LayerMask.NameToLayer("Ground"));
 	}
 }
