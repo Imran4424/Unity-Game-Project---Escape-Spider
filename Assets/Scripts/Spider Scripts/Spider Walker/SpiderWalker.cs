@@ -5,13 +5,21 @@ using UnityEngine;
 public class SpiderWalker : MonoBehaviour 
 {
 
+	private float speed = 1f;
+	private Rigidbody2D myBody;
+
+	void Awake()
+	{
+		
+	}
+
 	// Use this for initialization
 	void Start () {
 		
 	}
 	
-	// Update is called once per frame
-	void Update () {
+	void FixedUpdate()
+	{
 		
 	}
 }
