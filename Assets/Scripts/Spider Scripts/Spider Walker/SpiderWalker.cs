@@ -40,6 +40,8 @@ public class SpiderWalker : MonoBehaviour
 	{
 		collision_check = Physics2D.Linecast(startPos.position, endPos.position, 1 << LayerMask.NameToLayer("Ground"));
 
+		Debug.DrawLine(startPos.position, endPos.position, Color.red);
+
 		if (!collision_check)
 		{
 			Vector3 temp = transform.localScale;
