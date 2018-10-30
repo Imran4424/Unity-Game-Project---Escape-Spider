@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 991862846}
   - component: {fileID: 991862845}
   - component: {fileID: 991862848}
+  - component: {fileID: 991862849}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -230,6 +231,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.77, y: 2.55}
   m_EdgeRadius: 0
+--- !u!114 &991862849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 991862844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df2f27d1a6d46164bab47efd5d65cf16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1360325287
 GameObject:
   m_ObjectHideFlags: 0
