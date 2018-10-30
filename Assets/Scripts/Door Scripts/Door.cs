@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class Door : MonoBehaviour 
 {
-	public static Door instance; 
+	public static Door instance;
+
+	private Animator anim;
+	private BoxCollider2D box;
+
+	[HideInInspector]
+	public int countCollectables; 
 
 	// Use this for initialization
 	void Start () 
