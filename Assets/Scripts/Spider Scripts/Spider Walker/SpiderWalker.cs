@@ -10,7 +10,7 @@ public class SpiderWalker : MonoBehaviour
 
 	void Awake()
 	{
-		
+		myBody = GetComponent<Rigidbody2D> ();
 	}
 
 	// Use this for initialization
@@ -21,5 +21,10 @@ public class SpiderWalker : MonoBehaviour
 	void FixedUpdate()
 	{
 		
+	}
+
+	void Move()
+	{
+		myBody.velocity = new Vector2(transform.localScale.x, 0) * speed;
 	}
 }
