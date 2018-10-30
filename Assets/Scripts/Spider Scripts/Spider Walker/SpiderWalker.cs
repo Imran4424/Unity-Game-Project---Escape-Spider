@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class SpiderWalker : MonoBehaviour 
 {
-
+	[SerializeField]
+	private Transform startPos, endPos;
 	private float speed = 1f;
 	private Rigidbody2D myBody;
 
