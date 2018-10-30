@@ -14,7 +14,7 @@ public class Door : MonoBehaviour
 
 	void Awake()
 	{
-		
+		MakeInstance();
 	}
 
 	void MakeInstance()
