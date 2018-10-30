@@ -27,6 +27,11 @@ public class Door : MonoBehaviour
 		}
 	}
 
+	public void DecrementCollectables()
+	{
+		
+	}
+
 	IEnumerator OpenDoor()
 	{
 		anim.Play("Open");
