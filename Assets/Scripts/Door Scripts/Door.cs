@@ -15,6 +15,8 @@ public class Door : MonoBehaviour
 	void Awake()
 	{
 		MakeInstance();
+		anim = GetComponent<Animator>();
+		box = GetComponent<BoxCollider2D>();
 	}
 
 	void MakeInstance()
@@ -23,6 +25,12 @@ public class Door : MonoBehaviour
 		{
 			instance = this;
 		}
+	}
+
+	IEnumerator OpenDoor()
+	{
+		anim.Play("Open");
+		yield return new WaitForSeconds(0.7f);
 	}
 	
 	// Update is called once per frame
