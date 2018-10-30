@@ -52,4 +52,12 @@ public class SpiderWalker : MonoBehaviour
 			transform.localScale = temp;
 		}
 	}
+
+	void OnCollisionEnter2D(Collision2D target)
+	{
+		if (target.gameObject.tag == "Player")
+		{
+			Destroy(target.gameObject);
+		}		
+	}
 }
