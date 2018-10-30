@@ -14,5 +14,16 @@ public class DiamondScript : MonoBehaviour
 		}
 	}
 	
-	
+	void OnTriggerEnter2D(Collider2D target)
+	{
+		if(target.tag == "Player")
+		{
+			Destroy(gameObject);
+
+			if (Door.instance != null)
+			{
+				Door.instance.DecrementCollectables();
+			}
+		}
+	}
 }
