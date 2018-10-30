@@ -25,6 +25,7 @@ public class SpiderWalker : MonoBehaviour
 	void FixedUpdate()
 	{
 		Move();
+		ChangeDirection();
 	}
 
 	void Move()
