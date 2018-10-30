@@ -31,6 +31,7 @@ public class Door : MonoBehaviour
 	{
 		anim.Play("Open");
 		yield return new WaitForSeconds(0.7f);
+		box.isTrigger = true;
 	}
 	
 	// Update is called once per frame
