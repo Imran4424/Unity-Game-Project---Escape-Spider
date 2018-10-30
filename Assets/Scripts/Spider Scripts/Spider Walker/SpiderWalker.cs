@@ -20,7 +20,7 @@ public class SpiderWalker : MonoBehaviour
 	
 	void FixedUpdate()
 	{
-		
+		Move();
 	}
 
 	void Move()
