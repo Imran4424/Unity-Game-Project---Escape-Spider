@@ -8,12 +8,11 @@ public class DiamondScript : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
-		
+		if (Door.instance != null)
+		{
+			Door.instance.countCollectables++;
+		}
 	}
 	
-	// Update is called once per frame
-	void Update () 
-	{
-		
-	}
+	
 }
