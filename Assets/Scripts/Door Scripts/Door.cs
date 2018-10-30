@@ -52,7 +52,13 @@ public class Door : MonoBehaviour
 		}
 
 		/*
-			here target.tag and target.gameObject.tag both works on
+			here
+			 
+			target.tag 
+			and 
+			target.gameObject.tag 
+			
+			both works on
 		*/
 	}
 }
