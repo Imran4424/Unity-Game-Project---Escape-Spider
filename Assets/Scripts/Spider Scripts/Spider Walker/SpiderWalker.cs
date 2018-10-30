@@ -38,5 +38,19 @@ public class SpiderWalker : MonoBehaviour
 	void ChangeDirection()
 	{
 		collision_check = Physics2D.Linecast(startPos.position, endPos.position, 1 << LayerMask.NameToLayer("Ground"));
+
+		if (!collision_check)
+		{
+			Vector3 temp = transform.localScale;
+
+			if(temp.x == 1f)
+			{
+				temp.x = -1f;
+			}
+			else
+			{
+				temp.x = 1f;
+			}
+		}
 	}
 }
