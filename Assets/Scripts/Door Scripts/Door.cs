@@ -29,7 +29,12 @@ public class Door : MonoBehaviour
 
 	public void DecrementCollectables()
 	{
-		
+		countCollectables--;
+
+		if (countCollectables == 0)
+		{
+			StartCoroutine(OpenDoor());
+		}
 	}
 
 	IEnumerator OpenDoor()
