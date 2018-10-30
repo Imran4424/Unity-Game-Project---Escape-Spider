@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Door : MonoBehaviour 
 {
+	public static Door instance; 
 
 	// Use this for initialization
 	void Start () 
@@ -14,6 +15,6 @@ public class Door : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-			
+
 	}
 }
