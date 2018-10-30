@@ -46,9 +46,13 @@ public class Door : MonoBehaviour
 	
 	void OnTriggerEnter2D(Collider2D target)
 	{
-		if (target.gameObject.tag == "Player")
+		if (target.tag == "Player")
 		{
 			Debug.Log("Level Finished");
 		}
+
+		/*
+			here target.tag and target.gameObject.tag both works on
+		*/
 	}
 }
