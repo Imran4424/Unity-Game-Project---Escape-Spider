@@ -15,12 +15,6 @@ public class SpiderWalker : MonoBehaviour
 	{
 		myBody = GetComponent<Rigidbody2D> ();
 	}
-
-	// Use this for initialization
-	void Start () 
-	{
-		
-	}
 	
 	void FixedUpdate()
 	{
