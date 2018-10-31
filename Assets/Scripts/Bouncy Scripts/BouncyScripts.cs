@@ -29,6 +29,8 @@ public class BouncyScripts : MonoBehaviour
 		if (target.tag == "Player")
 		{
 			target.gameObject.GetComponent<PlayerScript>().BouncePlayerWithBouncy(force);
+
+			StartCoroutine(AnimationBouncy());
 		}
 	}
 }
