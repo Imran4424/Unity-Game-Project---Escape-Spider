@@ -110,7 +110,7 @@ public class PlayerScript : MonoBehaviour
 		{
 			grounded = false;
 
-			myBody.velocity = new Vector2(0, force);
+			myBody.AddForce( new Vector2(0, force));
 		}
 	}
 
