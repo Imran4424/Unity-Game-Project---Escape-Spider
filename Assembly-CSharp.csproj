@@ -51,7 +51,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Bouncy Scripts\BouncyScripts.cs" />
+     <Compile Include="Assets\Scripts\Collectables Scripts\DiamondScript.cs" />
+     <Compile Include="Assets\Scripts\Door Scripts\Door.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\PlayerScript.cs" />
+     <Compile Include="Assets\Scripts\Spider Scripts\Spider Jumper\SpiderJumper.cs" />
+     <Compile Include="Assets\Scripts\Spider Scripts\Spider Shooter\SpiderBullet.cs" />
+     <Compile Include="Assets\Scripts\Spider Scripts\Spider Shooter\SpiderShooter.cs" />
+     <Compile Include="Assets\Scripts\Spider Scripts\Spider Walker\SpiderWalker.cs" />
  <Reference Include="UnityEngine.CoreModule">
  <HintPath>D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
  </Reference>
