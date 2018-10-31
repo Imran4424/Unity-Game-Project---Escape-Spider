@@ -10,7 +10,14 @@ public class BouncyScripts : MonoBehaviour
 
 	void Awake()
 	{
-		
+		anim = GetComponent<Animator>();
+	}
+
+	IEnumerator AnimationBouncy()
+	{
+		anim.Play("Up");
+		yield return new WaitForSeconds(0.5f);
+		anim.Play("Down");
 	}
 	
 	// Update is called once per frame
