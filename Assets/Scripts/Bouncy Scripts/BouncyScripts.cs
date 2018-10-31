@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class BouncyScripts : MonoBehaviour 
 {
+	
+	private float force = 500f;
+	private Animator anim;
 
-	// Use this for initialization
-	void Start () 
+	void Awake()
 	{
 		
 	}
