@@ -20,9 +20,15 @@ public class BouncyScripts : MonoBehaviour
 		anim.Play("Down");
 	}
 	
-	// Update is called once per frame
-	void Update () 
+
+	/*
+		We can targeted object script using the following function
+	*/
+	void OnTriggerEnter2D(Collider2D target)
 	{
-		
+		if (target.tag == "Player")
+		{
+			target.gameObject.GetComponent<PlayerScript>().BouncePlayerWithBouncy(force);
+		}
 	}
 }
