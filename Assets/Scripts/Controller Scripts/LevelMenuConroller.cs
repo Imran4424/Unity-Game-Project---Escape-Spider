@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LevelMenuControllerScript : MonoBehaviour {
+public class LevelMenuConroller : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
