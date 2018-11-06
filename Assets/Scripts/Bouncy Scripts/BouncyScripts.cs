@@ -22,7 +22,7 @@ public class BouncyScripts : MonoBehaviour
 	
 
 	/*
-		We can targeted object script using the following function
+	* We can targeted object script using the following function
 	*/
 	void OnTriggerEnter2D(Collider2D target)
 	{
