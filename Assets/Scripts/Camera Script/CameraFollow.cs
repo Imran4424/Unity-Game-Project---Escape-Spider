@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraFollow : MonoBehaviour {
+public class CameraFollow : MonoBehaviour 
+{
 
 	private Transform player;
 
@@ -12,7 +13,8 @@ public class CameraFollow : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
 		
 	}
 }
