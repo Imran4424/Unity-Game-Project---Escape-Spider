@@ -22,7 +22,28 @@ public class CameraFollow : MonoBehaviour
 			Vector3 temp = transform.position;
 
 			temp.x = player.position.x;
+
+			if (temp.x < minX)
+			{
+				temp.x = minX;		
+			}
+
+			if (temp.x > maxX)
+			{
+				temp.x = maxX;
+			}
+
 			temp.y = player.position.y + 2f;
+
+			if (temp.y < minY)
+			{
+				temp.y = minY;
+			}
+
+			if (temp.y > maxY)
+			{
+				temp.y = maxY;
+			}
 
 			transform.position = temp;
 		}		
