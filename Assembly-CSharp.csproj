@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Bouncy Scripts\BouncyScripts.cs" />
+     <Compile Include="Assets\Scripts\Camera Script\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\Collectables Scripts\DiamondScript.cs" />
      <Compile Include="Assets\Scripts\Controller Scripts\LevelMenuController.cs" />
      <Compile Include="Assets\Scripts\Controller Scripts\MainMenuController.cs" />
