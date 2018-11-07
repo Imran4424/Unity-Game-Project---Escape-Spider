@@ -20,7 +20,7 @@ public class CameraFollow : MonoBehaviour
 			Vector3 temp = transform.position;
 
 			temp.x = player.position.x;
-			temp.y = player.position.y;
+			temp.y = player.position.y + 3f;
 
 			transform.position = temp;
 		}		
