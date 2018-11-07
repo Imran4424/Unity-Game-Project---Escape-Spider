@@ -7,6 +7,8 @@ public class CameraFollow : MonoBehaviour
 
 	private Transform player;
 
+	private float minX = -5f, maxX, minY = -11f, maxY = 35f;
+
 	void Awake()
 	{
 		player = GameObject.Find("Player").transform;
@@ -20,7 +22,7 @@ public class CameraFollow : MonoBehaviour
 			Vector3 temp = transform.position;
 
 			temp.x = player.position.x;
-			temp.y = player.position.y + 3f;
+			temp.y = player.position.y + 2f;
 
 			transform.position = temp;
 		}		
