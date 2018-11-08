@@ -7,7 +7,7 @@ public class CameraFollow : MonoBehaviour
 
 	private Transform player;
 
-	private float minX = -24f, maxX = 267f, minY = -5.5f, maxY = 35f;
+	private float minX = -24f, maxX = 267f, minY = -5.5f, maxY = 13f;
 
 	void Awake()
 	{
