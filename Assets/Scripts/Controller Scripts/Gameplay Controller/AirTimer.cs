@@ -15,7 +15,7 @@ public class AirTimer : MonoBehaviour
 
 	void Awake()
 	{
-		
+		GetReferences();
 	}
 	
 	// Update is called once per frame
