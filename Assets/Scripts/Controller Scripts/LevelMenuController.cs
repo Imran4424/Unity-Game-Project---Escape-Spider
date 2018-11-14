@@ -8,7 +8,7 @@ public class LevelMenuController : MonoBehaviour
 
 	public void LevelOne()
 	{
-		SceneManager.LoadScene("GamePlay", LoadSceneMode.Single);
+		SceneManager.LoadScene("Gameplay", LoadSceneMode.Single);
 	}
 
 	public void Back()
