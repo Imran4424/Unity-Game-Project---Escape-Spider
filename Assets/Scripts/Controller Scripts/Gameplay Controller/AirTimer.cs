@@ -7,8 +7,14 @@ public class AirTimer : MonoBehaviour
 {
 	private Slider slider;
 
-	// Use this for initialization
-	void Start () {
+	private GameObject player;
+
+	private float air = 10f;
+
+	private float airBurn = 1f;
+
+	void Awake()
+	{
 		
 	}
 	
