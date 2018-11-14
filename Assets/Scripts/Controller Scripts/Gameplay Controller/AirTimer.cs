@@ -21,7 +21,21 @@ public class AirTimer : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		
+		if (!player)
+		{
+			return;
+		}
+
+		if (air > 0)
+		{
+			air -= airBurn * Time.deltaTime;
+
+			slider.value = air;
+		}
+		else
+		{
+			Destroy(player);
+		}
 	}
 
 	void GetReferences()
