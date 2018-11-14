@@ -10,9 +10,9 @@ public class LevelTimer : MonoBehaviour
 
 	private GameObject player;
 
-	private float air = 10f;
+	private float time = 10f;
 
-	private float airBurn = 1f;
+	private float timeBurn = 1f;
 
 	void Awake ()
 	{
@@ -27,11 +27,11 @@ public class LevelTimer : MonoBehaviour
 			return;
 		}
 
-		if (air > 0)
+		if (time > 0)
 		{
-			air -= airBurn * Time.deltaTime;
+			time -= timeBurn * Time.deltaTime;
 
-			slider.value = air;
+			slider.value = time;
 		}
 		else
 		{
@@ -46,7 +46,7 @@ public class LevelTimer : MonoBehaviour
 		slider = GameObject.Find ("Air Slider").GetComponent<Slider> ();
 
 		slider.minValue = 0f;
-		slider.maxValue = air;
+		slider.maxValue = time;
 		slider.value = slider.maxValue;
 	}
 
