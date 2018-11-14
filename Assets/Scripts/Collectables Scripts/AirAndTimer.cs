@@ -11,12 +11,14 @@ public class AirAndTimer : MonoBehaviour
 		{
 			if (gameObject.name == "Air")
 			{
-				GameObject.Find ("GameplayController").GetComponent<AirTimer> ();
+				GameObject.Find ("GameplayController").GetComponent<AirTimer> ().air += 15f;
 			}
 			else
 			{
-				GameObject.Find ("GameplayController").GetComponent<LevelTimer> ();
+				GameObject.Find ("GameplayController").GetComponent<LevelTimer> ().time += 15f;
 			}
+
+			Destroy(gameObject);
 		}
 	}
 }
