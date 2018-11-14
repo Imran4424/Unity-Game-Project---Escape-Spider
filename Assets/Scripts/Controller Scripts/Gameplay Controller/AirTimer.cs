@@ -26,6 +26,12 @@ public class AirTimer : MonoBehaviour
 
 	void GetReferences()
 	{
-		
+		player = GameObject.Find("Player");
+
+		slider = GameObject.Find("Air Slider").GetComponent<Slider>();
+
+		slider.minValue = 0f;
+		slider.maxValue = air;
+		slider.value = slider.maxValue;
 	}
 }
