@@ -43,7 +43,7 @@ public class LevelTimer : MonoBehaviour
 	{
 		player = GameObject.Find ("Player");
 
-		slider = GameObject.Find ("Air Slider").GetComponent<Slider> ();
+		slider = GameObject.Find ("Timer Slider").GetComponent<Slider> ();
 
 		slider.minValue = 0f;
 		slider.maxValue = time;
