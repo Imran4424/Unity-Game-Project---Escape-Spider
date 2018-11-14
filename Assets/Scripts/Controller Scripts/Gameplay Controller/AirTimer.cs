@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class AirTimer : MonoBehaviour 
 {
-	
+	private Slider slider;
 
 	// Use this for initialization
 	void Start () {
