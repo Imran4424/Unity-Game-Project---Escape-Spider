@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AirAndTimer : MonoBehaviour {
+public class AirAndTimer : MonoBehaviour 
+{
 
 	
 }
