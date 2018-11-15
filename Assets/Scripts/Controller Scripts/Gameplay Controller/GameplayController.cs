@@ -16,7 +16,7 @@ public class GameplayController : MonoBehaviour
 		Time.timeScale = 0f;
 		pausePanel.SetActive (true);
 		resumeGame.onClick.RemoveAllListeners ();
-		resumeGame.onClick.AddListener (() >= ResumeGame());
+		resumeGame.onClick.AddListener (() => ResumeGame());
 	}
 
 	public void ResumeGame ()
