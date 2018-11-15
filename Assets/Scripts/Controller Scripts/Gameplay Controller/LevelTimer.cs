@@ -10,7 +10,7 @@ public class LevelTimer : MonoBehaviour
 
 	private GameObject player;
 
-	public float time = 10f;
+	public float time = 15f;
 
 	private float timeBurn = 1f;
 
