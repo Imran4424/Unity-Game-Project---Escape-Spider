@@ -2,20 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpiderBullet : MonoBehaviour 
+public class SpiderBullet : MonoBehaviour
 {
-	
-	void OnTriggerEnter2D(Collider2D target)
+
+	void OnTriggerEnter2D (Collider2D target)
 	{
 		if (target.tag == "Player")
 		{
-			Destroy(target.gameObject);			
-			Destroy(gameObject);			
+			Destroy (target.gameObject);
+			Destroy (gameObject);
+			GetComponent<GameplayController> ().PlayerDied ();
 		}
 		else if (target.tag == "Ground")
 		{
-			Destroy(gameObject);
+			Destroy (gameObject);
 		}
 	}
-	
+
 }
