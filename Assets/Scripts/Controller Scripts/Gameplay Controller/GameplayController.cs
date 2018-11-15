@@ -29,7 +29,8 @@ public class GameplayController : MonoBehaviour
 	public void RestartGame()
 	{
 		Time.timeScale = 1f;
-		
+
+		SceneManager.LoadScene("Gameplay", LoadSceneMode.Single);
 	}
 
 	public void GoToLevelMenu()
