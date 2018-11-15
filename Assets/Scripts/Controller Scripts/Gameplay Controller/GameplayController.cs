@@ -26,6 +26,12 @@ public class GameplayController : MonoBehaviour
 		pausePanel.SetActive (false);
 	}
 
+	public void RestartGame()
+	{
+		Time.timeScale = 1f;
+		
+	}
+
 	public void GoToLevelMenu()
 	{
 		Time.timeScale = 1f;
