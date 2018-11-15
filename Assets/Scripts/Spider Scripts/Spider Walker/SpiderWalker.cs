@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpiderWalker : MonoBehaviour 
+public class SpiderWalker : MonoBehaviour
 {
 	[SerializeField]
 	private Transform startPos, endPos;
@@ -11,36 +11,36 @@ public class SpiderWalker : MonoBehaviour
 	private float speed = 1f;
 	private Rigidbody2D myBody;
 
-	void Awake()
+	void Awake ()
 	{
 		myBody = GetComponent<Rigidbody2D> ();
 	}
-	
-	void FixedUpdate()
+
+	void FixedUpdate ()
 	{
-		Move();
-		ChangeDirection();
+		Move ();
+		ChangeDirection ();
 	}
 
-	void Move()
+	void Move ()
 	{
-		myBody.velocity = new Vector2(transform.localScale.x, 0) * speed;
+		myBody.velocity = new Vector2 (transform.localScale.x, 0) * speed;
 	}
 
 	/*
 		using line cast for detect the whole line collision
 	*/
-	void ChangeDirection()
+	void ChangeDirection ()
 	{
-		collision_check = Physics2D.Linecast(startPos.position, endPos.position, 1 << LayerMask.NameToLayer("Ground"));
+		collision_check = Physics2D.Linecast (startPos.position, endPos.position, 1 << LayerMask.NameToLayer ("Ground"));
 
-		Debug.DrawLine(startPos.position, endPos.position, Color.red);
+		Debug.DrawLine (startPos.position, endPos.position, Color.red);
 
 		if (!collision_check)
 		{
 			Vector3 temp = transform.localScale;
 
-			if(temp.x == 1f)
+			if (temp.x == 1f)
 			{
 				temp.x = -1f;
 			}
@@ -53,11 +53,12 @@ public class SpiderWalker : MonoBehaviour
 		}
 	}
 
-	void OnCollisionEnter2D(Collision2D target)
+	void OnCollisionEnter2D (Collision2D target)
 	{
 		if (target.gameObject.tag == "Player")
 		{
-			Destroy(target.gameObject);
-		}		
+			Destroy (target.gameObject);
+			GetComponent<GameplayController> ().PlayerDied ();
+		}
 	}
 }
