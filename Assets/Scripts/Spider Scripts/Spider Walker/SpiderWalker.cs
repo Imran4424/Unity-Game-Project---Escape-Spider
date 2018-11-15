@@ -57,8 +57,8 @@ public class SpiderWalker : MonoBehaviour
 	{
 		if (target.gameObject.tag == "Player")
 		{
-			GetComponent<GameplayController> ().PlayerDied ();
 			Destroy (target.gameObject);
+			GetComponent<GameplayController> ().PlayerDied ();
 		}
 	}
 }
