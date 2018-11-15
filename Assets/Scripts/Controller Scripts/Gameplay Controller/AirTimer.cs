@@ -9,7 +9,7 @@ public class AirTimer : MonoBehaviour
 
 	private GameObject player;
 
-	public float air = 15f;
+	public float air = 100f;
 
 	private float airBurn = 1f;
 
