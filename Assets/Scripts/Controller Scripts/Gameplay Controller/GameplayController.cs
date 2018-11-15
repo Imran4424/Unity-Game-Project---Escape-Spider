@@ -30,6 +30,7 @@ public class GameplayController : MonoBehaviour
 	{
 		Time.timeScale = 0f;
 		
+		StartCoroutine(Wait());
 	}
 
 	IEnumerator Wait()
