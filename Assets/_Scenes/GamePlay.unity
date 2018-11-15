@@ -6901,8 +6901,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62dfee5de1c1c44aa0cc54b6aeb5872, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pausePanel: {fileID: 0}
-  resumeGame: {fileID: 0}
+  pausePanel: {fileID: 606776714}
+  resumeGame: {fileID: 384173285}
 --- !u!114 &1294619101
 MonoBehaviour:
   m_ObjectHideFlags: 0
