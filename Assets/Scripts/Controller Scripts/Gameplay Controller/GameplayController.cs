@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameplayController : MonoBehaviour
 {
@@ -17,7 +17,7 @@ public class GameplayController : MonoBehaviour
 		Time.timeScale = 0f;
 		pausePanel.SetActive (true);
 		resumeGame.onClick.RemoveAllListeners ();
-		resumeGame.onClick.AddListener (() => ResumeGame());
+		resumeGame.onClick.AddListener (() => ResumeGame ());
 	}
 
 	public void ResumeGame ()
@@ -26,30 +26,31 @@ public class GameplayController : MonoBehaviour
 		pausePanel.SetActive (false);
 	}
 
-	public void RestartGame()
+	public void RestartGame ()
 	{
 		Time.timeScale = 1f;
 
-		SceneManager.LoadScene("Gameplay", LoadSceneMode.Single);
+		SceneManager.LoadScene ("Gameplay", LoadSceneMode.Single);
 	}
 
-	public void GoToLevelMenu()
+	public void GoToLevelMenu ()
 	{
 		Time.timeScale = 1f;
 
-		SceneManager.LoadScene("LevelMenu", LoadSceneMode.Single);
+		SceneManager.LoadScene ("LevelMenu", LoadSceneMode.Single);
 	}
 
-	public void PlayerDied()
+	public void PlayerDied ()
 	{
 		Time.timeScale = 0f;
-
-		StartCoroutine(Wait());
+		pausePanel.SetActive (true);
+		resumeGame.onClick.RemoveAllListeners ();
+		resumeGame.onClick.AddListener (() => ResumeGame ());
 	}
 
-	IEnumerator Wait()
-	{	
-		yield return new WaitForSeconds(2f);
+	IEnumerator Wait ()
+	{
+		yield return new WaitForSeconds (2f);
 
 	}
 }
