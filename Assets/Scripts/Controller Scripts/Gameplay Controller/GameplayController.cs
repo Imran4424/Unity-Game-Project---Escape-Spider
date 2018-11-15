@@ -25,4 +25,11 @@ public class GameplayController : MonoBehaviour
 		Time.timeScale = 0f;
 		pausePanel.SetActive (false);
 	}
+
+	public void PlayerDied()
+	{
+		Time.timeScale = 0f;
+
+		
+	}
 }
