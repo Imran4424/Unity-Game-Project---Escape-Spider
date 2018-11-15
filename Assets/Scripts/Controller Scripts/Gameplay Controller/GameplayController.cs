@@ -22,6 +22,6 @@ public class GameplayController : MonoBehaviour
 	public void ResumeGame ()
 	{
 		Time.timeScale = 0f;
-		pausePanel.SetActive (fa);
+		pausePanel.SetActive (false);
 	}
 }
