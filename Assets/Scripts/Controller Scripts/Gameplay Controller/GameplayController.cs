@@ -29,6 +29,12 @@ public class GameplayController : MonoBehaviour
 	public void PlayerDied()
 	{
 		Time.timeScale = 0f;
+		
+	}
+
+	IEnumerator Wait()
+	{	
+		yield return new WaitForSeconds(2f);
 
 		SceneManager.LoadScene("LevelMenu", LoadSceneMode.Single);
 	}
