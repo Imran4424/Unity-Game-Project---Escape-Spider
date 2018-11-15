@@ -8,5 +8,10 @@ public class MainMenuController : MonoBehaviour
 	public void PlayGame()
 	{
 		SceneManager.LoadScene("LevelMenu", LoadSceneMode.Single);
-	}	
+	}
+
+	public void Exit()
+	{
+		Application.Quit();
+	}
 }
