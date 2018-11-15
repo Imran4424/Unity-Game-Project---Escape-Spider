@@ -26,10 +26,17 @@ public class GameplayController : MonoBehaviour
 		pausePanel.SetActive (false);
 	}
 
+	public void GoToLevelMenu()
+	{
+		Time.timeScale = 1f;
+
+		SceneManager.LoadScene("LevelMenu", LoadSceneMode.Single);
+	}
+
 	public void PlayerDied()
 	{
 		Time.timeScale = 0f;
-		
+
 		StartCoroutine(Wait());
 	}
 
@@ -37,6 +44,5 @@ public class GameplayController : MonoBehaviour
 	{	
 		yield return new WaitForSeconds(2f);
 
-		SceneManager.LoadScene("LevelMenu", LoadSceneMode.Single);
 	}
 }
