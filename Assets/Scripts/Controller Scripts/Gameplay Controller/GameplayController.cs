@@ -43,9 +43,9 @@ public class GameplayController : MonoBehaviour
 	public void PlayerDied ()
 	{
 		Time.timeScale = 0f;
-		pausePanel.SetActive (true);
-		resumeGame.onClick.RemoveAllListeners ();
-		resumeGame.onClick.AddListener (() => RestartGame ());
+		gameOverPanel.SetActive (true);
+		restartGame.onClick.RemoveAllListeners ();
+		restartGame.onClick.AddListener (() => RestartGame ());
 	}
 
 	IEnumerator Wait ()
