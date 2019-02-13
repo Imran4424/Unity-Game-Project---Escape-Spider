@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\Camera Script\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\Collectables Scripts\AirAndTimer.cs" />
      <Compile Include="Assets\Scripts\Collectables Scripts\DiamondScript.cs" />
+     <Compile Include="Assets\Scripts\Controller Scripts\AboutController.cs" />
      <Compile Include="Assets\Scripts\Controller Scripts\Gameplay Controller\AirTimer.cs" />
      <Compile Include="Assets\Scripts\Controller Scripts\Gameplay Controller\GameplayController.cs" />
      <Compile Include="Assets\Scripts\Controller Scripts\Gameplay Controller\LevelTimer.cs" />
