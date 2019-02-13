@@ -10,7 +10,7 @@ public class DiamondScript : MonoBehaviour
 	{
 		if (Door.instance != null)
 		{
-			Door.instance.countCollectables++;
+			Door.instance.countCollectables++; // incrementing collectables count 
 		}
 	}
 	

@@ -6650,7 +6650,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pausePanel: {fileID: 606776714}
+  gameOverPanel: {fileID: 0}
   resumeGame: {fileID: 384173285}
+  restartGame: {fileID: 0}
 --- !u!114 &1294619101
 MonoBehaviour:
   m_ObjectHideFlags: 0

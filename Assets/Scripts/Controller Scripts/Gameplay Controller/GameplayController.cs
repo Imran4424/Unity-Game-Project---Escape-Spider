@@ -7,10 +7,10 @@ using UnityEngine.UI;
 public class GameplayController : MonoBehaviour
 {
 	[SerializeField]
-	private GameObject pausePanel;
+	private GameObject pausePanel, gameOverPanel;
 
 	[SerializeField]
-	private Button resumeGame;
+	private Button resumeGame, restartGame;
 
 	public void PauseGame ()
 	{
