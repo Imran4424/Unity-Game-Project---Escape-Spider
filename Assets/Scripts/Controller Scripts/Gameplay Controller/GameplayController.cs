@@ -30,7 +30,7 @@ public class GameplayController : MonoBehaviour
 	{
 		Time.timeScale = 1f;
 
-		SceneManager.LoadScene ("Gameplay", LoadSceneMode.Single);
+		SceneManager.LoadScene (SceneManager.GetActiveScene ().name, LoadSceneMode.Single);
 	}
 
 	public void GoToLevelMenu ()
