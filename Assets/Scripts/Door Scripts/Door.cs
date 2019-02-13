@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class Door : MonoBehaviour 
+public class Door : MonoBehaviour
 {
 	public static Door instance;
 
@@ -10,16 +11,16 @@ public class Door : MonoBehaviour
 	private BoxCollider2D box;
 
 	[HideInInspector]
-	public int countCollectables; 
+	public int countCollectables;
 
-	void Awake()
+	void Awake ()
 	{
-		MakeInstance();
-		anim = GetComponent<Animator>();
-		box = GetComponent<BoxCollider2D>();
+		MakeInstance ();
+		anim = GetComponent<Animator> ();
+		box = GetComponent<BoxCollider2D> ();
 	}
 
-	void MakeInstance()
+	void MakeInstance ()
 	{
 		if (instance == null)
 		{
@@ -27,28 +28,35 @@ public class Door : MonoBehaviour
 		}
 	}
 
-	public void DecrementCollectables()
+	public void DecrementCollectables ()
 	{
 		countCollectables--;
 
 		if (countCollectables == 0)
 		{
-			StartCoroutine(OpenDoor());
+			StartCoroutine (OpenDoor ());
 		}
 	}
 
-	IEnumerator OpenDoor()
+	IEnumerator OpenDoor ()
 	{
-		anim.Play("Open");
-		yield return new WaitForSeconds(0.7f);
+		anim.Play ("Open");
+		yield return new WaitForSeconds (0.7f);
 		box.isTrigger = true;
 	}
-	
-	void OnTriggerEnter2D(Collider2D target)
+
+	void OnTriggerEnter2D (Collider2D target)
 	{
 		if (target.tag == "Player")
 		{
-			GameObject.Find("Gameplay Controller").GetComponent<GameplayController>().PlayerDied();
+			if (SceneManager.GetActiveScene ().name == "GameplayOne")
+			{
+				SceneManager.LoadScene ("GameplayTwo", LoadSceneMode.Single);
+			}
+			else if (SceneManager.GetActiveScene ().name == "GameplayTwo")
+			{
+				SceneManager.LoadScene ("GameplayTwo", LoadSceneMode.Single);
+			}
 		}
 
 		/*
