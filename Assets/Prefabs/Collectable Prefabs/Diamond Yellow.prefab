@@ -78,6 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4be3b6a00c83e9f4f868c7fce44c9ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinSFX: {fileID: 8300000, guid: 160de86d8984b8a44a2d884a2df67166, type: 3}
 --- !u!212 &212200622166547874
 SpriteRenderer:
   m_ObjectHideFlags: 1

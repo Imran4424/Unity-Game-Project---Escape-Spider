@@ -2,27 +2,42 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DiamondScript : MonoBehaviour 
+public class DiamondScript : MonoBehaviour
 {
+	public AudioClip coinSFX;
+
+	AudioSource _audio;
+
+	void Awake ()
+	{
+		_audio = GetComponent<AudioSource> ();
+	}
 
 	// Use this for initialization
-	void Start () 
+	void Start ()
 	{
 		if (Door.instance != null)
 		{
 			Door.instance.countCollectables++; // incrementing collectables count 
 		}
 	}
-	
-	void OnTriggerEnter2D(Collider2D target)
+
+	// play sound through the audiosource on the gameobject
+	void PlaySound (AudioClip clip)
 	{
-		if(target.tag == "Player")
+		_audio.PlayOneShot (clip);
+	}
+
+	void OnTriggerEnter2D (Collider2D target)
+	{
+		if (target.tag == "Player")
 		{
-			Destroy(gameObject);
+			PlaySound (coinSFX);
+			Destroy (gameObject);
 
 			if (Door.instance != null)
 			{
-				Door.instance.DecrementCollectables();
+				Door.instance.DecrementCollectables ();
 			}
 		}
 	}
