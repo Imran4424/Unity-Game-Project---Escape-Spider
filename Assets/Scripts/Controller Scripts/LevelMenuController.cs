@@ -13,7 +13,22 @@ public class LevelMenuController : MonoBehaviour
 
 	public void LevelTwo()
 	{
+		SceneManager.LoadScene("GameplayTwo", LoadSceneMode.Single);
+	}
+
+	public void LevelThree()
+	{
+		SceneManager.LoadScene("GameplayThree", LoadSceneMode.Single);
+	}
+
+	public void LevelFour()
+	{
 		SceneManager.LoadScene("Gameplay", LoadSceneMode.Single);
+	}
+
+	public void LevelFive()
+	{
+		SceneManager.LoadScene("Reserve", LoadSceneMode.Single);
 	}
 
 	public void Back()

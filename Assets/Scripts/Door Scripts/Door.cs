@@ -55,8 +55,17 @@ public class Door : MonoBehaviour
 			}
 			else if (SceneManager.GetActiveScene ().name == "GameplayTwo")
 			{
-				SceneManager.LoadScene ("GameplayTwo", LoadSceneMode.Single);
+				SceneManager.LoadScene ("GameplayThree", LoadSceneMode.Single);
 			}
+			else if (SceneManager.GetActiveScene ().name == "GameplayThree")
+			{
+				SceneManager.LoadScene ("Gameplay", LoadSceneMode.Single);
+			}
+			else if (SceneManager.GetActiveScene ().name == "Gameplay")
+			{
+				SceneManager.LoadScene ("Reserve", LoadSceneMode.Single);
+			}
+
 		}
 
 		/*
