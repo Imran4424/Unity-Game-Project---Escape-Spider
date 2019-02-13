@@ -25,7 +25,7 @@ public class DiamondScript : MonoBehaviour
 	// play sound through the audiosource on the gameobject
 	void PlaySound (AudioClip clip)
 	{
-		_audio.PlayOneShot (clip);
+		_audio.PlayOneShot(clip);
 	}
 
 	void OnTriggerEnter2D (Collider2D target)
